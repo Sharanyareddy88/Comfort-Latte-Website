@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop Beans</title>
+  <link rel="stylesheet" href="beans.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <div class="logo">Comfort Latte</div>
+        <ul class="top">
+                        
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="signup.html">Signup</a></li>
+
+            <a href="#Search" class="search-icon"><i class="fas fa-search"></i></a>
+            
+        </ul>
+</nav>
+  <h1 class="bean-title">Shop Our Fresh Beans</h1>
+
+  <section class="beans-menu">
+  <div class="bean-card">
+    <img src="arabica.jpg" alt="Arabica Beans">
+    <div class="bean-info">
+      <h2>Arabica Premium</h2>
+      <p>Smooth and mild with nutty notes.</p>
+      <span class="price">₹349 / 250g</span>
+    </div>
+  </div>
+
+  <div class="bean-card">
+    <img src="Green robusta.jpg" alt="Robusta Beans">
+    <div class="bean-info">
+      <h2>Green Robusta</h2>
+      <p>Bold, bitter, and packed with caffeine.</p>
+      <span class="price">₹299 / 250g</span>
+    </div>
+  </div>
+
+  <div class="bean-card">
+    <img src="ey.jpg" alt="Ethiopian Beans">
+    <div class="bean-info">
+      <h2>Ethiopian Yirgacheffe</h2>
+      <p>Light roast with citrus and floral aroma.</p>
+      <span class="price">₹429 / 200g</span>
+    </div>
+  </div>
+
+  <div class="bean-card">
+    <img src="eb.jpg" alt="Espresso Beans">
+    <div class="bean-info">
+      <h2>Espresso Blend</h2>
+      <p>Dark & rich with caramel undertones.</p>
+      <span class="price">₹399 / 250g</span>
+    </div>
+  </div>
+
+  <div class="bean-card">
+    <img src="im.jpg" alt="Monsooned Malabar Beans">
+    <div class="bean-info">
+      <h2>Monsooned Malabar</h2>
+      <p>Earthy flavor with low acidity.</p>
+      <span class="price">₹379 / 250g</span>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <section id="contact" class="contact-section">
+    <div class="contact-box">
+    <div class="icon">📍</div>
+    <h6>Address</h6>
+    <p>2nd Floor, 5th Cross, MG Road,<br>Bangalore, Karnataka 560001<br>India</p>
+  </div>
+  <div class="contact-box">
+    <div class="icon">✉️</div>
+    <h6>E-mail</h6>
+    <p>comfortlatte@coffee.com<br>support@comfortlatte.com</p>
+  </div>
+  <div class="contact-box">
+    <div class="icon">📞</div>
+    <h6>Call us</h6>
+    <p>+91 98765 43210</p>
+  </div>
+  <div class="contact-box">
+    <div class="icon">🕒</div>
+    <h6>Opening hours</h6>
+    <p>Mon - Fri: 8:00 - 22:00<br>Sat - Sun: 9:00 - 23:00</p>
+  </div>
+    </section>
+    <footer class="footer">
+    © 2025 Comfort Latte. All rights are reserved hot
+    </footer>
+
+</footer>
+
+
+    <script>
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+        navbar.classList.add('shrink');
+        } else {
+        navbar.classList.remove('shrink');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

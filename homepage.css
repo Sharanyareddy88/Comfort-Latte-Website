@@ -1,0 +1,338 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    color:black;
+    font-family:Georgia;
+    overflow-x: hidden;
+    background-color:#7a5434;
+    
+}
+.logo{
+    
+    margin-top:40px;
+    margin-left:40px;
+    position: relative;
+    top:-10px;
+    font-size:40px;
+    color:#f9e5c2;
+    font-family:'Dancing Script', cursive;
+    font-weight:normal;
+}
+.top{
+    display:flex;
+    list-style: none;
+    gap:50px;
+
+}
+.top a{
+    text-decoration: none;
+    color:white;
+    font-family: arial;
+    font-size:13px;
+
+}
+a:hover{
+    color:#be9b5e;
+    
+}
+a:active{
+    color:white;
+}
+.navbar{
+    background-color: #7a5434;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 30px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100; 
+
+}
+.search-icon{
+    cursor:pointer;
+    color:black;
+    margin-right:4rem;
+}
+#Homepage{
+    background: url('Coffeee.jpg') no-repeat center center/cover;
+    height:100vh;
+    width:100%;
+    position:relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    color:white;
+    padding-top:100px;
+    overflow: hidden;
+}
+.brief {
+  padding-left: 190px;
+  color: white;
+}
+#Homepage h2{
+    font-size: 30px;
+    font-family:'Dancing Script', cursive;
+    color:rgb(255, 255, 255);
+    font-weight: 200;
+    
+}  
+#Homepage h1{
+    font-size: 80px;
+    font-family: 'Raleway', serif;
+    margin-bottom:20px;
+    letter-spacing: 20px;
+    font-weight: 540;
+}  
+.shop-button{
+ 
+    width: 90px;
+    height: 35px;
+    background-color: rgb(122, 84, 52);
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left:160px;
+    opacity: 0.9;
+
+}
+.shop-button:hover{
+    color:#3b2808;
+    transform: scale(1.05);
+}
+.shop-button:active{
+    color:white;
+}
+.brief h1, .brief h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.slide-in{
+    opacity:0;/*The element starts invisible.*/
+    transform:translateY(40px);/*The element starts pushed 40px down from where it should be.*/
+    animation:slideUp 1.5s ease-out forwards;/*Tells it to run the animation named slideUp for 1 second, easing smoothly, and stay at the end position after finishing.*/
+}
+@keyframes slideUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+.text h1, .text h2 {
+
+   font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+.text h1 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  padding-top:40px;
+  padding-bottom:10px;
+  text-align: center;
+  color:#2e1f05;
+}
+
+.text h2 {
+    color:#ffffffe6;
+  font-size: 16px; 
+  font-weight:600;
+  text-align: center;
+  letter-spacing: 0.9px;  
+}
+.row-container{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap:wrap;/* Allows wrapping to next line on smaller screens */
+    padding: 40px 20px;
+    
+}
+.drink-card{
+    background-color: rgba(255,255, 255, 0,05);
+    padding:15px;
+    border-radius: 10px;
+    width:250px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);       /* Adds soft shadow for elevation */
+
+}
+.drink-card img{
+    width:100%;
+    height:170px;
+    object-fit: fill;
+    border-radius: 10px;
+
+}
+.drink-card h3{
+    font-size: 16px;
+    margin:10px 0 10px;
+    font-weight: 600;
+}
+.drink-card p{
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family:arial;
+    color:#2e1a09;
+}
+.drink-card:hover{
+
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+.buy-button{
+    background-color: #3b2808;
+    color:white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius:2px;
+    font-size:12px;
+    display: inline-block;
+    transition:0.3s ease;
+}
+.buy-button:hover{
+    background-color: #be9b5e;
+    color:#3b2808;
+}
+.buy-button:active{
+    color:white;
+}
+.Milkshakes-container{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:30px 0;
+
+}
+.shakes{
+    width:250px;
+    width:250px;
+    padding:15px;
+    background-color:#7a5434;
+    border-radius:15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    
+    
+}
+.shakes:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+.shakes img{
+    width:100%;
+    object-fit: cover;
+    height:300px;
+    border-radius: 10px;
+}
+.shakes h4{
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    margin:10px 0 10px;
+    letter-spacing: 0.8px;
+}
+.btext{
+    color:#2e1a09;
+    padding-bottom: 10px;
+    font-size: 20px;
+
+}
+.shopnow-button{
+    text-decoration: none;
+    color:white;
+    background-color:#3b2808;
+    padding:8px 15px;
+    border-radius: 20px;
+    font-size: 10px;
+    transition:0.3s ease;
+    display: inline;
+
+}
+.shopnow-button:hover{
+    background-color: #695431;
+    color:#3b2808;
+    transform: translateY(-3px);
+}
+.shopnow-button:active{
+    color:white;
+}
+
+.coffee-beans{
+    background-image: url(Coffeebeans.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:350px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 20px;
+    margin-top: 30px;
+    color:#fff;
+    position:relative;
+}
+ 
+#navbar.shrink {
+  padding: 2px 20px;
+  background-color: #5d3e20;
+}
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #844f35;
+  color: white;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 220px;
+  margin: 10px;
+  text-align: left;
+}
+
+.icon {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.contact-box h6 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+.footer {
+  background-color: #844f35;;
+  color: #f9e5c2;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}

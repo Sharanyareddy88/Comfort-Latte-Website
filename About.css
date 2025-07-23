@@ -1,0 +1,254 @@
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    
+}
+html {
+  scroll-behavior: smooth;
+}
+.logo{
+    
+    margin-top:40px;
+    margin-left:40px;
+    position: relative;
+    top:-10px;
+    font-size:40px;
+    color:#f9e5c2;
+    font-family:'Dancing Script', cursive;
+    font-weight:normal;
+}
+.top{
+    display:flex;
+    list-style: none;
+    gap:50px;
+
+}
+.top a{
+    text-decoration: none;
+    color:white;
+    font-family: arial;
+    font-size:13px;
+
+}
+a:hover{
+    color:#be9b5e;
+    
+}
+a:active{
+    color:white;
+}
+.navbar{
+    background-color: #7a5434;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 30px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100; 
+
+}
+.search-icon{
+    cursor:pointer;
+    color:black;
+    margin-right:4rem;
+}
+#navbar.shrink {
+  padding: 1px 20px;
+  background-color: #5d3e20;
+}
+
+.page-content {
+  padding-top: 80px;
+}
+.About{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-left:3rem;
+    padding-right: 1rem;
+}
+.about-total{
+    flex:1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+}
+.about-img{
+    flex:1;
+    padding-top: 20px;
+    
+}
+.line{
+    background-color: #7a5434;
+    width:60%;
+    height:3px;
+    margin:10px 0;
+}
+.story-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem;
+}
+.story-total{
+    flex:1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+}
+.story-img{
+    flex:1;
+    padding-top: 20px;
+}
+.Story{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 50px;
+}
+.People{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.people-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-left:3rem;
+    padding-right: 1rem;
+}
+.people-total{
+    flex:1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+}
+.people-img{
+    flex:1;
+    padding-top: 20px;
+    width:45%;
+    object-fit: contain;
+    height:auto;
+    
+}
+.testimony-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.testimonals-total{
+    flex:1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+}
+.testimony-img{
+    flex:1;
+    padding-top: 20px;
+    
+}
+.testimony-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+ 
+}
+
+.Test{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.founder-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-left:3rem;
+    padding-right: 1rem;
+}
+.founder-total{
+    flex:1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+}
+.founder-img{
+    flex:1;
+    padding-top: 20px;
+}
+.founder{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 50px;
+}
+.founder-img img {
+    width: 105%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #844f35;
+  color: white;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 220px;
+  margin: 10px;
+  text-align: left;
+}
+
+.icon {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.contact-box h6 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+  margin-top:10px;
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+
+.footer {
+  background-color: #844f35;;
+  color: #f9e5c2;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}

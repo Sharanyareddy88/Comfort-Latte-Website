@@ -1,0 +1,146 @@
+body{
+    background-image: url(Menubackground.jpg);
+    background-size: cover;
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    margin:0;
+    overflow-x: hidden;
+    padding:0;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    color:#4d3711;
+}
+
+
+.menu{
+    margin-left:500px;
+    color:white;
+}
+.menu-item {
+
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin-bottom: 8px;
+}
+
+.item-name {
+    font-size: 18px;
+    color:black;
+    padding-bottom: 15px;
+    flex:1;
+    margin-left:20px;
+    font-weight:600;
+}
+
+.item-price {
+    font-size: 16px;
+    color: black;
+    font-family: monospace;
+    margin: 0 auto;
+    width:10px;
+    font-weight:600;
+}
+
+.logo{
+    
+    margin-top:40px;
+    margin-left:40px;
+    position: relative;
+    top:-10px;
+    font-size:40px;
+    color:#f9e5c2;
+    font-family:'Dancing Script', cursive;
+    font-weight:normal;
+}
+.top{
+    display:flex;
+    list-style: none;
+    gap:50px;
+
+}
+.top a{
+    text-decoration: none;
+    color:white;
+    font-family: arial;
+    font-size:13px;
+
+}
+a:hover{
+    color:#be9b5e;
+    
+}
+a:active{
+    color:white;
+}
+.navbar{
+    background-color: #7a5434;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 30px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100; 
+
+}
+.search-icon{
+    cursor:pointer;
+    color:black;
+    margin-right:4rem;
+}
+#navbar.shrink {
+  padding: 1px 20px;
+  background-color: #5d3e20;
+}
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #844f35;
+  color: white;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 220px;
+  margin: 10px;
+  text-align: left;
+}
+
+.icon {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.contact-box h6 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+  margin-top:10px;
+ 
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+.footer {
+  background-color: #844f35;;
+  color: #f9e5c2;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}

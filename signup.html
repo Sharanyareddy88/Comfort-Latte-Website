@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Comfort Latte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      background:url(signup.png);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signup-box {
+      background: #fffdf9;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      width: 360px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #7a5434;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #7a5434;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5d3e20;
+      cursor: pointer;
+    }
+
+    .note {
+      font-size: 12px;
+      text-align: center;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 420px) {
+      .signup-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-box">
+    <h2>Welcome to Comfort Latte</h2>
+    <form onsubmit="return validatePassword()">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number (Optional)">
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+      <p class="note">Already have an account? Go grab your coffee and log in ☕</p>
+    </form>
+  </div>
+
+  <script>
+    function validatePassword() {
+      const pwd = document.getElementById('password').value;
+      const confirmPwd = document.getElementById('confirm-password').value;
+      if (pwd !== confirmPwd) {
+        alert('Passwords do not match!');
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+</body>
+</html>
